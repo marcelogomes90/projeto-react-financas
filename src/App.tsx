@@ -1,7 +1,5 @@
-import Button from './components/button/button'
 import Cards from './components/cards/cards'
-import RadioInput from './components/radioInput/radioInput'
-import TextInput from './components/textInput/textInput'
+import Form from './components/form/form'
 import Title from './components/title/title'
 
 function App() {
@@ -10,9 +8,7 @@ function App() {
     <>
       <Title />
       <Cards />
-      <Button />
-      <TextInput />
-      <RadioInput />
+      <Form />
     </>
   )
 }

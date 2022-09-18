@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const SubmitButton = styled.button`
-    background-color: #3F37C9;
+    background-color: #4CF0A9;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 16px;

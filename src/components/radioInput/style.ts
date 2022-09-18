@@ -5,6 +5,7 @@ export const DivInput = styled.div`
     height: 35px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 10px
 `

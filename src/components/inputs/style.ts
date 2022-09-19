@@ -7,7 +7,7 @@ export const DivInput = styled.div`
 `
 
 export const Input = styled.input`
-    width: 180px;
+    width: 160px;
     height: 30px;
     border-radius: 5px;
     border: solid;

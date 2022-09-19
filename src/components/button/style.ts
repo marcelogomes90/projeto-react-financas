@@ -7,7 +7,7 @@ const SubmitButton = styled.button`
     font-size: 16px;
     border: none;
     border-radius: 10px;
-    width: 150px;
+    width: 120px;
     height: 50px;
     cursor: pointer;
 `

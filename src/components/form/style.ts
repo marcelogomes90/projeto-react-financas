@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const DivForm = styled.div`
-    width: 250px;
+    width: 230px;
     display: flex;
     justify-content: center;
 `

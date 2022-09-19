@@ -5,8 +5,8 @@ const Container = styled.form`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding: 0 10% 0 10%;
+    gap: 10px;
+    padding: 0 5% 0 5%;
 `
 
 export default Container;

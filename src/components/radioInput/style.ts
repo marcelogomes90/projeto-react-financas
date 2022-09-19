@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const DivInput = styled.div`
-    width: 130px;
+    width: 120px;
     height: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px
+    gap: 5px
 `
 
 export const Input = styled.input`

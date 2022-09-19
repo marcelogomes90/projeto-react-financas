@@ -18,14 +18,14 @@ function Table() {
                 <Body>
                     <Linha>
                         <Coluna>Cinema</Coluna>
-                        <Coluna>R$ 1200,00</Coluna>
+                        <Coluna style={{color: "red"}}>R$ 1200,00</Coluna>
                         <Coluna>Lazer</Coluna>
                         <Coluna><BiDownArrowCircle color="red" size="24px"></BiDownArrowCircle></Coluna>
                         <Coluna><BiTrash color="black" size="24px"></BiTrash></Coluna>
                     </Linha>
                     <Linha>
                         <Coluna>Salário</Coluna>
-                        <Coluna>R$ 2500,00</Coluna>
+                        <Coluna style={{color: "green"}}>R$ 2500,00</Coluna>
                         <Coluna>Fixo</Coluna>
                         <Coluna><BiUpArrowCircle color="green" size="24px"></BiUpArrowCircle></Coluna>
                         <Coluna><BiTrash color="black" size="24px"></BiTrash></Coluna>

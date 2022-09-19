@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import MyContext from "../../context/MyContext";
 import { DivInput, Input, Label } from "./style";
 
 
 function CurrencyInput() {
 
-    const [valueCurrency, setValueCurrency] = useState('');
+    const {novaEntrada, setNovaEntrada}: any = useContext(MyContext);
 
     const handleCurrencyChange = (event: any) => {
-        setValueCurrency(event.target.value)
+        setNovaEntrada({...novaEntrada, valor: event.target.value})
     };
     
     return (
@@ -15,8 +16,8 @@ function CurrencyInput() {
             <Label>Valor</Label>
             <Input 
                 type="number"
-                pattern="^\\$?(([1-9](\\d*|\\d{0,2}(.\\d{3})*))|0)(\\,\\d{1,2})?R$"
-                value={valueCurrency}
+                name="valor"
+                value={novaEntrada.valor}
                 onChange={(event) => handleCurrencyChange(event)}
             />
         </DivInput>

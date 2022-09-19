@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const DivInput = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 `
 
 export const Input = styled.input`
-    width: 200px;
+    width: 180px;
     height: 30px;
     border-radius: 5px;
     border: solid;

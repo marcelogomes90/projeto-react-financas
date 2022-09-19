@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const DivInput = styled.div`
-    width: 140px;
-    height: 35px;
+    width: 130px;
+    height: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,8 +11,8 @@ export const DivInput = styled.div`
 `
 
 export const Input = styled.input`
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 `
 
 export const Label = styled.label`

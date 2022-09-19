@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import MyContext from "../../context/MyContext";
 import { DivInput, Input, Label } from "./style";
 
 function CategoryInput() {
 
-    const [valueCategory, setValueCategory] = useState('');
+    const {novaEntrada, setNovaEntrada}: any = useContext(MyContext);
 
     const handleCategoryChange = (event: any) => {
-        setValueCategory(event.target.value)
+        setNovaEntrada({...novaEntrada, categoria: event.target.value})
     };
 
     return (
@@ -14,7 +15,9 @@ function CategoryInput() {
             <Label>Categoria</Label>
             <Input 
                 type="text"
-                value={valueCategory}
+                name="categoria"
+                maxLength={25}
+                value={novaEntrada.categoria}
                 onChange={(event) => handleCategoryChange(event)}
             />
         </DivInput>

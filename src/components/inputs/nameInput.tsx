@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import MyContext from "../../context/MyContext";
 import { DivInput, Input, Label } from "./style";
 
 function NameInput() {
 
-    const [valueDescription, setValueDescription] = useState('');
+    const {novaEntrada, setNovaEntrada}: any = useContext(MyContext);
 
-    const handleDescriptionChange = (event: any) => {
-        setValueDescription(event.target.value)
+    const handleNameChange = (event: any) => {
+        setNovaEntrada({...novaEntrada, nome: event.target.value})
     };
 
     return (
@@ -14,8 +15,10 @@ function NameInput() {
             <Label>Descrição</Label>
             <Input 
                 type="text"
-                value={valueDescription}
-                onChange={(event) => handleDescriptionChange(event)}
+                name="descricao"
+                maxLength={25}
+                value={novaEntrada.nome}
+                onChange={(event) => handleNameChange(event)}
             />
         </DivInput>
     )

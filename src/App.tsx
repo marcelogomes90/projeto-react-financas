@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Cards from './components/cards/cards'
 import Form from './components/form/form'
+import Table from './components/table/table';
 import Title from './components/title/title'
 import MyContext from './context/MyContext'
 
@@ -17,7 +18,7 @@ function App() {
     nome: "",
     valor: "",
     categoria: "",
-    tipo: ""
+    tipo: "",
   })
   
   return (
@@ -26,6 +27,7 @@ function App() {
         <Title />
         <Cards />
         <Form />
+        <Table />
       </MyContext.Provider>
     </>
   )

@@ -15,6 +15,7 @@ function CurrencyInput() {
         <DivInput>
             <Label>Valor</Label>
             <Input 
+                required
                 type="number"
                 name="valor"
                 value={novaEntrada.valor}

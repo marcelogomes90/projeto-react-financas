@@ -9,13 +9,13 @@ function RadioInput() {
 
     const handleRadioChange = (event: any) => {
         setNovaEntrada({...novaEntrada, tipo: event.target.value})
-        console.log(novaEntrada)
     };
 
     return (
         <Container>
             <DivInput>
                 <Input 
+                    required
                     type="radio"
                     value="Entrada"
                     name="tipo"

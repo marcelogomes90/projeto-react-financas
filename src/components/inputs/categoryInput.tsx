@@ -14,6 +14,7 @@ function CategoryInput() {
         <DivInput>
             <Label>Categoria</Label>
             <Input 
+                required
                 type="text"
                 name="categoria"
                 maxLength={25}

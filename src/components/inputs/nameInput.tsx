@@ -14,6 +14,7 @@ function NameInput() {
         <DivInput>
             <Label>Descrição</Label>
             <Input 
+                required
                 type="text"
                 name="descricao"
                 maxLength={25}

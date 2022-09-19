@@ -2,7 +2,9 @@ import SubmitButton from "./style"
 
 function Button() {
     return (
-        <SubmitButton>Adicionar</SubmitButton>
+        <SubmitButton
+        >Adicionar
+        </SubmitButton>
     )
 }
 

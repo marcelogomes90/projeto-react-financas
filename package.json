@@ -29,7 +29,6 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.8",
     "prettier": "^2.7.1",
-    "react-currency-input-field": "^3.6.4",
     "react-icons": "^4.4.0",
     "styled-components": "^5.3.5",
     "typescript": "*",

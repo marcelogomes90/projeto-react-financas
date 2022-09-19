@@ -7,8 +7,8 @@ export const DivInput = styled.div`
 `
 
 export const Input = styled.input`
-    width: 250px;
-    height: 35px;
+    width: 200px;
+    height: 30px;
     border-radius: 5px;
     border: solid;
     border-width: 1px;

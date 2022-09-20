@@ -9,10 +9,6 @@ const Container = styled.div`
     margin: 0 5% 0 5%;
     gap: 20px;
 
-    @media (max-width: 550px) {
-        flex-direction: column;
-        align-items: center;
-    }
 `
 
 export default Container;

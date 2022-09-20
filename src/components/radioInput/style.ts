@@ -11,12 +11,12 @@ export const DivInput = styled.div`
 `
 
 export const Input = styled.input`
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 `
 
 export const Label = styled.label`
     color: #000000;
-    font-size: 18px;
+    font-size: 16px;
 `
 

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import MyContext from "../../context/MyContext";
 import { DivInput, Input, Label } from "./style";
 
@@ -15,9 +15,9 @@ function CurrencyInput() {
             <Label>Valor</Label>
             <Input 
                 required
+                defaultValue=""
                 type="number"
                 name="valor"
-                value={novaEntrada.valor}
                 onChange={(event) => handleCurrencyChange(event)}
             />
         </DivInput>

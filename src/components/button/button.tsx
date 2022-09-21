@@ -6,11 +6,13 @@ import SubmitButton from "./style"
 function Button() {
 
     const {novaEntrada}: any = useContext(MyContext);
-    
+
     const SendObjStorage = () => {
 
         if (novaEntrada.nome !== "" && novaEntrada.valor !== "" && novaEntrada.categoria !== "" && novaEntrada.tipo !== "") {
             arrayEntrada.push(novaEntrada);
+        } else {
+            alert('Preencha todos os campos!')
         }
         
     }
@@ -18,7 +20,7 @@ function Button() {
     return (
         <SubmitButton
             onClick={SendObjStorage}
-            type="button"
+            type="reset"
         >Adicionar
         </SubmitButton>
     )

@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import MyContext from "../../context/MyContext";
 import { DivInput, Input, Label } from "./style";
 
@@ -15,10 +15,10 @@ function NameInput() {
             <Label>Descrição</Label>
             <Input 
                 required
+                defaultValue=""
                 type="text"
                 name="descricao"
                 maxLength={25}
-                value={novaEntrada.nome}
                 onChange={(event) => handleNameChange(event)}
             />
         </DivInput>

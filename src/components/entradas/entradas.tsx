@@ -5,6 +5,9 @@ import { DivEntrada, DivItemEntrada, DivItemTitulo, DivTitulo } from "./style";
 
 function Entradas() {
 
+    arrayEntrada?.map((entrada: any) => (console.log(entrada.tipo)))
+    console.log(arrayEntrada);
+    
     return (
         <Container>
             <DivTitulo>
@@ -17,10 +20,10 @@ function Entradas() {
             {arrayEntrada?.map((entrada: any) => ( 
                 <DivEntrada>
                     <DivItemEntrada>{`${entrada?.nome}`}</DivItemEntrada>
-                    <DivItemEntrada style={{color: "red"}}>{`R$ ${entrada?.valor}`}</DivItemEntrada>
+                    <DivItemEntrada style={{color: entrada.tipo == 'Entrada' ? 'green' : 'red'}}>{`R$ ${entrada?.valor}`}</DivItemEntrada>
                     <DivItemEntrada>{`${entrada?.categoria}`}</DivItemEntrada>
-                    <DivItemEntrada>{ entrada.tipo = "Saida" ? <BiDownArrowCircle color="red" size="24px"></BiDownArrowCircle> : <BiUpArrowCircle color="green" size="24px"></BiUpArrowCircle>}</DivItemEntrada>
-                    <DivItemEntrada><BiTrash color="black" size="24px"></BiTrash></DivItemEntrada>
+                    <DivItemEntrada>{ entrada.tipo == 'Entrada' ? <BiUpArrowCircle color='green' size='24px'></BiUpArrowCircle> : <BiDownArrowCircle color='red' size='24px'></BiDownArrowCircle>}</DivItemEntrada>
+                    <DivItemEntrada><BiTrash color='black' size='24px'></BiTrash></DivItemEntrada>
                 </DivEntrada>
             ))}
         </Container>

@@ -24,7 +24,8 @@ function RadioInput() {
                 <Label>Entrada</Label>
             </DivInput>
             <DivInput>
-                <Input 
+                <Input
+                    required
                     type="radio"
                     value="Saida"
                     name="tipo"

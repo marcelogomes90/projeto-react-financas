@@ -14,7 +14,7 @@ function RadioInput() {
     return (
         <Container>
             <DivInput>
-                <Input 
+                <Input
                     required
                     type="radio"
                     value="Entrada"

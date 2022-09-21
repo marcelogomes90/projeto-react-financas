@@ -20,7 +20,7 @@ function App() {
     categoria: "",
     tipo: "",
   })
-  
+
   return (
     <>
       <MyContext.Provider value={{novaEntrada, setNovaEntrada}}>

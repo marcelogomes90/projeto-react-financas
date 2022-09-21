@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import MyContext from "../../context/MyContext";
 import { DivInput, Input, Label } from "./style";
 
-
 function CurrencyInput() {
 
     const {novaEntrada, setNovaEntrada}: any = useContext(MyContext);

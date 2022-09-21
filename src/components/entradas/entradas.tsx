@@ -1,9 +1,17 @@
+import { useContext, useEffect } from "react";
 import { BiDownArrowCircle, BiUpArrowCircle, BiTrash } from "react-icons/bi";
+import MyContext from "../../context/MyContext";
 import { arrayEntrada } from "../../service/service";
 import Container from "./container";
 import { DivEntrada, DivItemEntrada, DivItemLixeira, DivItemTitulo, DivTitulo } from "./style";
 
 function Entradas() {
+
+    const {novaEntrada}: any = useContext(MyContext);
+
+    useEffect(() => {
+        
+    }, [novaEntrada.count] )
 
     return (
         <Container>

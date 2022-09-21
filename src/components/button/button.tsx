@@ -20,7 +20,7 @@ function Button() {
     return (
         <SubmitButton
             onClick={SendObjStorage}
-            type="reset"
+            type="button"
         >Adicionar
         </SubmitButton>
     )

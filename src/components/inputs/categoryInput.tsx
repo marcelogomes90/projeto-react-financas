@@ -15,7 +15,6 @@ function CategoryInput() {
             <Label>Categoria</Label>
             <Input 
                 required
-                defaultValue=""
                 type="text"
                 name="categoria"
                 maxLength={25}

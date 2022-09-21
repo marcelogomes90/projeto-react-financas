@@ -15,7 +15,6 @@ function CurrencyInput() {
             <Label>Valor</Label>
             <Input 
                 required
-                defaultValue=""
                 type="number"
                 name="valor"
                 onChange={(event) => handleCurrencyChange(event)}

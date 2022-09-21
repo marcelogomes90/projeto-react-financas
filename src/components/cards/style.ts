@@ -29,7 +29,7 @@ export const DivTitle = styled.div`
 
 export const TitleCard = styled.span`
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     color: #000000;
 `
 

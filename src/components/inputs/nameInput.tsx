@@ -15,7 +15,6 @@ function NameInput() {
             <Label>Descrição</Label>
             <Input 
                 required
-                defaultValue=""
                 type="text"
                 name="descricao"
                 maxLength={25}

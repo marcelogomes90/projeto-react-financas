@@ -33,10 +33,10 @@ export const DivEntrada = styled.div`
 `
 
 export const DivItemEntrada = styled.div`
-    width: 200px;
+    width: 190px;
 
     @media (min-width: 1365px) {
-        width: 250px;
+        width: 240px;
     }
 `
 

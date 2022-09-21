@@ -7,6 +7,7 @@ import CategoryInput from "../inputs/categoryInput";
 import NameInput from "../inputs/nameInput";
 
 function Form() {
+
     return (
         <Container>
             <DivForm>
@@ -26,6 +27,7 @@ function Form() {
             </DivForm>
         </Container>
     )
+    
 }
 
 export default Form;

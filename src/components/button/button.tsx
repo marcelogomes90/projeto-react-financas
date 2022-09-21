@@ -16,7 +16,7 @@ function Button() {
     }
 
     return (
-        <SubmitButton 
+        <SubmitButton
             onClick={SendObjStorage}
             type="button"
         >Adicionar

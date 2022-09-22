@@ -1,6 +1,7 @@
 import Container from "./container";
 import { DivCard, DivTitle, IconCard, TitleCard, Valor } from "./style";
 import { BiDownArrowCircle, BiUpArrowCircle, BiDollar } from "react-icons/bi";
+import { total, totalEntradas, totalSaidas } from "../../service/service";
 
 function Cards() {
     return (
@@ -15,7 +16,7 @@ function Cards() {
                         />
                     </IconCard>
                 </DivTitle>
-                <Valor>R$ 2500,00</Valor>
+                <Valor>R$ {totalEntradas}</Valor>
             </DivCard>
             <DivCard>
                 <DivTitle>
@@ -27,7 +28,7 @@ function Cards() {
                         />
                     </IconCard>
                 </DivTitle>
-                <Valor>R$ 1500,00</Valor>
+                <Valor>R$ {totalSaidas}</Valor>
             </DivCard>
             <DivCard>
                 <DivTitle>
@@ -39,7 +40,7 @@ function Cards() {
                         />
                     </IconCard>
                 </DivTitle>
-                <Valor>R$ 1000,00</Valor>
+                <Valor>R$ {total}</Valor>
             </DivCard>
         </Container>
     )

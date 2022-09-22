@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import MyContext from "../../context/MyContext";
 import { arrayEntrada } from "../../service/service";
 import SubmitButton from "./style"
+import { somaEntradas } from './../../service/service';
 
 function Button() {
 
@@ -17,7 +18,9 @@ function Button() {
 
         if (novaEntrada.nome !== "" && novaEntrada.valor !== "" && novaEntrada.categoria !== "" && novaEntrada.tipo !== "") {
             arrayEntrada.push(novaEntrada);
-        } 
+        }
+
+        somaEntradas();
 
     }
 

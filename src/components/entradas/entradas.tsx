@@ -27,9 +27,9 @@ function Entradas() {
             {arrayEntrada?.map((entrada: any) => ( 
             
             <DivEntrada>
-                <DivItemEntrada>{`${entrada?.nome}`}</DivItemEntrada>
-                <DivItemEntrada style={{color: entrada.tipo == 'Entrada' ? 'green' : 'red'}}>{`R$ ${entrada?.valor}`}</DivItemEntrada>
-                <DivItemEntrada>{`${entrada?.categoria}`}</DivItemEntrada>
+                <DivItemEntrada>{`${entrada.nome}`}</DivItemEntrada>
+                <DivItemEntrada style={{color: entrada.tipo == 'Entrada' ? 'green' : 'red'}}>{`R$ ${parseFloat(entrada.valor).toFixed(2)}`}</DivItemEntrada>
+                <DivItemEntrada>{`${entrada.categoria}`}</DivItemEntrada>
                 <DivItemEntrada>{ entrada.tipo == 'Entrada' ? <BiUpArrowCircle color='green' size='24px'></BiUpArrowCircle> : <BiDownArrowCircle color='red' size='24px'></BiDownArrowCircle>}</DivItemEntrada>
                 <DivItemLixeira><BiTrash color='black' size='24px'></BiTrash></DivItemLixeira>
             </DivEntrada>

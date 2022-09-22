@@ -18,4 +18,3 @@ export function somaEntradas() {
     total = parseFloat(somaTotal.toFixed(2));
 
 }
-

@@ -16,7 +16,7 @@ function Entradas() {
 
     const removeItem = (event: any) => {
         var idObjeto = event.target.id;
-        removeObjArray(idObjeto, 1);
+        removeObjArray(idObjeto);
         setCount(count + 1)
         setNovaEntrada({...novaEntrada, rmv: count})
     }

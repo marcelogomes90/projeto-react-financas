@@ -22,7 +22,9 @@ export function somaEntradas() {
 
 }
 
-export function removeObjArray(index:any, count: any) {
-    arrayEntrada.splice(index, count);
+export function removeObjArray(idObjeto: any) {
+    var arrayFiltrado = arrayEntrada.filter((element: any) => element.id !== idObjeto);
+    console.log(arrayFiltrado);
+    arrayEntrada = arrayFiltrado;
     somaEntradas();
 }

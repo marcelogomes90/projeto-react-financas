@@ -17,6 +17,7 @@ function CurrencyInput() {
                 required
                 type="number"
                 name="valor"
+                step=".01"
                 onChange={(event) => handleCurrencyChange(event)}
             />
         </DivInput>

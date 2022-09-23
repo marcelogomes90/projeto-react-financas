@@ -7,7 +7,6 @@ export const DivInput = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 
     @media (min-width: 1367px) {
         width: 100px;

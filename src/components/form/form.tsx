@@ -11,23 +11,17 @@ import MyContext from "../../context/MyContext";
 function Form() {
 
     const {novaEntrada, setNovaEntrada}: any = useContext(MyContext);
-
-    const clearForm: any = document.querySelector(".form");
+    const clearForm: any = document.querySelector('.form');
 
     window.addEventListener('submit', (event) => {
         event.preventDefault();
 
         if (novaEntrada.nome !== "" && novaEntrada.valor !== "" && novaEntrada.categoria !== "" && novaEntrada.tipo !== "") {
             clearForm.reset();
-            setNovaEntrada({...novaEntrada, nome: ""})
-            setNovaEntrada({...novaEntrada, valor: ""})
-            setNovaEntrada({...novaEntrada, categoria: ""})
-            setNovaEntrada({...novaEntrada, tipo: ""})
+            setNovaEntrada({...novaEntrada, nome: "", valor: "", categoria: "", tipo: ""})
         }
 
-        console.log(novaEntrada)
-        
-    });
+    })
 
     return (
         <Container className="form">

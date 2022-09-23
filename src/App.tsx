@@ -5,17 +5,10 @@ import Entradas from './components/entradas/entradas';
 import Title from './components/title/title'
 import MyContext from './context/MyContext'
 
-interface Entrada {
-  nome: string;
-  valor: string;
-  categoria: string;
-  tipo: string;
-  id: number | string;
-}
 
 function App() {
 
-  const [novaEntrada, setNovaEntrada] = useState<Entrada>({
+  const [novaEntrada, setNovaEntrada] = useState({
     nome: "",
     valor: "",
     categoria: "",

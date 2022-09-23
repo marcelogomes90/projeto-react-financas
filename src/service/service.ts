@@ -23,8 +23,7 @@ export function somaEntradas() {
 }
 
 export function removeObjArray(idObjeto: any) {
-    var arrayFiltrado = arrayEntrada.filter((element: any) => element.id !== idObjeto);
-    console.log(arrayFiltrado);
+    var arrayFiltrado = arrayEntrada.filter((element: any) => element.id != idObjeto);
     arrayEntrada = arrayFiltrado;
     somaEntradas();
 }

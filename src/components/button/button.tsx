@@ -23,7 +23,6 @@ function Button() {
     return (
         <SubmitButton
             onClick={sendObjtoArray}
-            id="botao"
         >Adicionar
         </SubmitButton>
     )

@@ -10,7 +10,7 @@ interface Entrada {
   valor: string;
   categoria: string;
   tipo: string;
-  count: string;
+  id: number | string;
 }
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     valor: "",
     categoria: "",
     tipo: "",
-    count: "",
+    id: 0,
   })
 
   return (

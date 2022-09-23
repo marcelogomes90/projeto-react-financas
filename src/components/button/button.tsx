@@ -7,27 +7,23 @@ import { somaEntradas } from './../../service/service';
 function Button() {
 
     const {novaEntrada, setNovaEntrada}: any = useContext(MyContext);
-
     const [countArray, setCountArray] = useState(1);
 
     const sendObjtoArray = () => {
 
-        setCountArray(countArray + 1);
-
-        setNovaEntrada({...novaEntrada, count: countArray})
-
         if (novaEntrada.nome !== "" && novaEntrada.valor !== "" && novaEntrada.categoria !== "" && novaEntrada.tipo !== "") {
+            setCountArray(countArray + 1);
+            setNovaEntrada({...novaEntrada, id: countArray})
             arrayEntrada.push(novaEntrada);
+            somaEntradas();
         }
-
-        somaEntradas();
-
+        
     }
 
     return (
         <SubmitButton
             onClick={sendObjtoArray}
-            type="button"
+            id="botao"
         >Adicionar
         </SubmitButton>
     )

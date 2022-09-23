@@ -11,7 +11,7 @@ function Entradas() {
 
     useEffect(() => {
         
-    }, [novaEntrada.count] )
+    }, [novaEntrada.id] )
 
     return (
         <Container>

@@ -16,7 +16,7 @@ function Cards() {
                         />
                     </IconCard>
                 </DivTitle>
-                <Valor>R$ {totalEntradas}</Valor>
+                <Valor>{totalEntradas}</Valor>
             </DivCard>
             <DivCard>
                 <DivTitle>
@@ -28,7 +28,7 @@ function Cards() {
                         />
                     </IconCard>
                 </DivTitle>
-                <Valor>R$ {totalSaidas}</Valor>
+                <Valor>{totalSaidas}</Valor>
             </DivCard>
             <DivCard>
                 <DivTitle>
@@ -40,7 +40,7 @@ function Cards() {
                         />
                     </IconCard>
                 </DivTitle>
-                <Valor>R$ {total}</Valor>
+                <Valor>{total}</Valor>
             </DivCard>
         </Container>
     )

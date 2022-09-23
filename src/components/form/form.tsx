@@ -5,11 +5,32 @@ import Container from "./container";
 import DivForm from "./style";
 import CategoryInput from "../inputs/categoryInput";
 import NameInput from "../inputs/nameInput";
+import { useContext } from "react";
+import MyContext from "../../context/MyContext";
 
 function Form() {
 
+    const {novaEntrada, setNovaEntrada}: any = useContext(MyContext);
+
+    const clearForm: any = document.querySelector(".form");
+
+    window.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        if (novaEntrada.nome !== "" && novaEntrada.valor !== "" && novaEntrada.categoria !== "" && novaEntrada.tipo !== "") {
+            clearForm.reset();
+            setNovaEntrada({...novaEntrada, nome: ""})
+            setNovaEntrada({...novaEntrada, valor: ""})
+            setNovaEntrada({...novaEntrada, categoria: ""})
+            setNovaEntrada({...novaEntrada, tipo: ""})
+        }
+
+        console.log(novaEntrada)
+        
+    });
+
     return (
-        <Container>
+        <Container className="form">
             <DivForm>
                 <NameInput />
             </DivForm>

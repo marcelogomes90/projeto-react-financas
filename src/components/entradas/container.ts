@@ -7,6 +7,11 @@ const Container = styled.div`
     align-items: center;
     padding: 0 5% 0 5%;
     width: 90vw;
+
+    @media (max-width: 620px) {
+        width: 100vw;
+        padding: 0;
+    }
 `
 
 export default Container;

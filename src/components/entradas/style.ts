@@ -31,6 +31,11 @@ export const DivItemTitulo = styled.div`
     @media (max-width: 850px) {
         width: 120px;
     }
+
+    @media (max-width: 620px) {
+        width: 65px;
+        font-size: 10px;
+    }
 `
 export const DivEntrada = styled.div`
     background-color: #FFFFFF;
@@ -61,6 +66,11 @@ export const DivItemEntrada = styled.div`
     @media (max-width: 850px) {
         width: 120px;
     }
+
+    @media (max-width: 620px) {
+        width: 65px;
+        font-size: 10px;
+    }
 `
 
 export const DivItemLixeira = styled.div`
@@ -77,6 +87,11 @@ export const DivItemLixeira = styled.div`
 
     @media (max-width: 850px) {
         width: 120px;
+    }
+
+    @media (max-width: 620px) {
+        width: 65px;
+        font-size: 10px;
     }
 
 `

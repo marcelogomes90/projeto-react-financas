@@ -2,8 +2,17 @@ import Container from "./container";
 import { DivCard, DivTitle, IconCard, TitleCard, Valor } from "./style";
 import { BiDownArrowCircle, BiUpArrowCircle, BiDollar } from "react-icons/bi";
 import { total, totalEntradas, totalSaidas } from "../../service/service";
+import { useContext, useEffect, useState } from "react";
+import MyContext from "../../context/MyContext";
 
 function Cards() {
+
+    const {novaEntrada}: any = useContext(MyContext);
+
+    useEffect(() => {
+
+    }, [novaEntrada.rmv] );
+
     return (
         <Container>
             <DivCard>

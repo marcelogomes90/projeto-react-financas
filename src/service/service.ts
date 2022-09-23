@@ -21,3 +21,8 @@ export function somaEntradas() {
     total = total.toLocaleString('pt-br', {minimumFractionDigits: 2})
 
 }
+
+export function removeObjArray(index:any, count: any) {
+    arrayEntrada.splice(index, count);
+    somaEntradas();
+}

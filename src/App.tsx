@@ -14,6 +14,7 @@ function App() {
     categoria: "",
     tipo: "",
     id: 0,
+    rmv: 0,
   })
 
   return (

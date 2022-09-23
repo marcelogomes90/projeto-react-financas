@@ -1,17 +1,25 @@
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { BiDownArrowCircle, BiUpArrowCircle, BiTrash } from "react-icons/bi";
 import MyContext from "../../context/MyContext";
-import { arrayEntrada } from "../../service/service";
+import { arrayEntrada, removeObjArray } from "../../service/service";
 import Container from "./container";
 import { DivEntrada, DivItemEntrada, DivItemLixeira, DivItemTitulo, DivTitulo } from "./style";
 
 function Entradas() {
 
-    const {novaEntrada}: any = useContext(MyContext);
+    const [count, setCount] = useState(1);
+    const {novaEntrada, setNovaEntrada}: any = useContext(MyContext);
 
     useEffect(() => {
         
-    }, [novaEntrada.id] )
+    }, [novaEntrada.id || count ] )
+
+    const removeItem = (event: any) => {
+        var idObjeto = event.target.id;
+        removeObjArray(idObjeto, 1);
+        setCount(count + 1)
+        setNovaEntrada({...novaEntrada, rmv: count})
+    }
 
     return (
         <Container>
@@ -26,12 +34,12 @@ function Entradas() {
 
             {arrayEntrada?.map((entrada: any) => ( 
             
-            <DivEntrada>
+            <DivEntrada key={`${entrada.id}`}>
                 <DivItemEntrada>{`${entrada.nome}`}</DivItemEntrada>
                 <DivItemEntrada style={{color: entrada.tipo == 'Entrada' ? 'green' : 'red'}}>{`R$ ${parseFloat(entrada.valor).toFixed(2)}`}</DivItemEntrada>
                 <DivItemEntrada>{`${entrada.categoria}`}</DivItemEntrada>
                 <DivItemEntrada>{ entrada.tipo == 'Entrada' ? <BiUpArrowCircle color='green' size='24px'></BiUpArrowCircle> : <BiDownArrowCircle color='red' size='24px'></BiDownArrowCircle>}</DivItemEntrada>
-                <DivItemLixeira><BiTrash color='black' size='24px'></BiTrash></DivItemLixeira>
+                <DivItemLixeira id={`${entrada.id}`} onClick={(event) => removeItem(event)}><BiTrash color='black' size='24px'></BiTrash></DivItemLixeira>
             </DivEntrada>
 
             ))}

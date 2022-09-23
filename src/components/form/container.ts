@@ -8,6 +8,10 @@ const Container = styled.form`
     margin-top: -50px;
     gap: 10px;
     padding: 0 5% 0 5%;
+
+    @media (max-width: 620px) {
+        flex-direction: column;
+    }
 `
 
 export default Container;

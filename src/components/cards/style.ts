@@ -10,6 +10,19 @@ export const DivCard = styled.div`
     @media (min-width: 1367px) {
         width: 400px;
     }
+
+    @media (max-width: 1024px) {
+        width: 250px;
+    }
+
+    @media (max-width: 850px) {
+        width: 180px;
+        height: 180px;
+    }
+
+    @media (max-width: 620px) {
+        width: 300px;
+    }
 `
 
 export const DivTitle = styled.div`
@@ -25,12 +38,35 @@ export const DivTitle = styled.div`
         width: 390px;
     }
 
+    @media (max-width: 1024px) {
+        width: 210px;
+    }
+
+    @media (max-width: 850px) {
+        width: 140px;
+    }
+
+    @media (max-width: 620px) {
+        width: 280px;
+    }
 `
 
 export const TitleCard = styled.span`
     margin: 0;
     font-size: 20px;
     color: #000000;
+
+    @media (max-width: 1024px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 620px) {
+        font-size: 20px;
+    }
 `
 
 export const IconCard = styled.div`
@@ -45,4 +81,15 @@ export const Valor = styled.h2`
     color: #000000;
     font-size: 34px;
 
+    @media (max-width: 1024px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 850px) {
+        font-size: 22px;
+    }
+
+    @media (max-width: 620px) {
+        font-size: 28px;
+    }
 `

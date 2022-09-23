@@ -15,10 +15,21 @@ export const DivTitulo = styled.div`
 export const DivItemTitulo = styled.div`
     color: #000000;
     width: 190px;
+    font-size: 18px;
     font-weight: bold; 
 
-    @media (min-width: 1365px) {
+    @media (min-width: 1367px) {
         width: 240px;
+        font-size: 20px;
+    }
+
+    @media (max-width: 1024px) {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    @media (max-width: 850px) {
+        width: 120px;
     }
 `
 export const DivEntrada = styled.div`
@@ -35,21 +46,37 @@ export const DivEntrada = styled.div`
 
 export const DivItemEntrada = styled.div`
     width: 190px;
-
-    @media (min-width: 1365px) {
-        width: 240px;
-    }
-`
-
-export const Texto = styled.span`
     font-size: 18px;
+
+    @media (min-width: 1367px) {
+        width: 240px;
+        font-size: 20px;
+    }
+
+    @media (max-width: 1024px) {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    @media (max-width: 850px) {
+        width: 120px;
+    }
 `
 
 export const DivItemLixeira = styled.div`
     width: 190px;
     cursor: pointer;
 
-    @media (min-width: 1365px) {
+    @media (min-width: 1367px) {
         width: 240px;
     }
+
+    @media (max-width: 1024px) {
+        width: 150px;
+    }
+
+    @media (max-width: 850px) {
+        width: 120px;
+    }
+
 `

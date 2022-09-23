@@ -17,8 +17,6 @@ function CurrencyInput() {
                 required
                 type="number"
                 name="valor"
-                step=".01"
-                pattern="[0-9]+([,\.][0-9]+)?"
                 onChange={(event) => handleCurrencyChange(event)}
             />
         </DivInput>

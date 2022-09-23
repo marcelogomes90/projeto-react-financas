@@ -7,7 +7,7 @@ export const DivCard = styled.div`
     color: #000000;
     background-color: #FFFFFF;
 
-    @media (min-width: 1365px) {
+    @media (min-width: 1367px) {
         width: 400px;
     }
 `
@@ -21,7 +21,7 @@ export const DivTitle = styled.div`
     width: 260px;
     height: 40px;
 
-    @media (min-width: 1365px) {
+    @media (min-width: 1367px) {
         width: 390px;
     }
 

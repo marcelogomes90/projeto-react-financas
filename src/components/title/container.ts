@@ -5,7 +5,7 @@ const Container = styled.div`
     text-align: center;
     line-height: 150px;
     width: 100wh;
-    height: 200px;
+    height: 260px;
 `
 
 export default Container;

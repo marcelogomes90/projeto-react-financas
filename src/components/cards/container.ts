@@ -5,7 +5,7 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: space-around;
     position: relative;
-    top: -50px;
+    top: -100px;
     margin: 0 5% 0 5%;
     gap: 20px;
 

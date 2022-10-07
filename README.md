@@ -18,14 +18,14 @@ O Projeto consiste na criação de uma ferramenta web de controle financeiro. Po
 
 ## Baixe o Projeto :arrow_down:	
 
->Clone o repositório na sua máquina
+Clone o repositório na sua máquina
 
 ```git clone https://github.com/marcelogomes90/projeto-react-financas.git```
 
->Baixe as dependencias 
+Baixe as dependencias 
 
 ```yarn```
 
->Rode na sua máquina
+Rode na sua máquina
 
 ```yarn dev```
